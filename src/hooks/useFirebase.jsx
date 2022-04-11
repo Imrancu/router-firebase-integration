@@ -17,7 +17,7 @@ const useFirebase = () =>{
         })
     }
 
-    const handeSignOut = ()=>{
+    const handleSignOut = ()=>{
         signOut(auth)
         .then(()=>{})
     }
@@ -30,7 +30,7 @@ const useFirebase = () =>{
 
     return {
         user,
-        handeSignOut,
+        handleSignOut,
         signInWithGoogle
     }
 }
